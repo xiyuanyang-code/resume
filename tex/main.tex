@@ -24,8 +24,8 @@
 \usepackage{hyperref}
 \definecolor{lightblue}{RGB}{173, 216, 230} 
 \hypersetup{
-    colorlinks = true,  % 启用超链接颜色（否则会用方框）
-    urlcolor   = blue,  % 设置URL链接颜色为蓝色
+    colorlinks = true,  
+    urlcolor   = blue,  
 }
 \input{glyphtounicode}
 
@@ -123,33 +123,7 @@
   Online Resume: \href{https://xiyuanyang-code.github.io/resume}{https://xiyuanyang-code.github.io/resume/}
 \end{center}
 
-% \section{Professional Experience}
-% \cvheadingstart
-%   \cvheading
-%     {Company}{City, State}
-%     {Title}{09/2021 - Present}
-%   \cvitemstart
-%     \cvitem{Description}
-%     \cvitem{Description}
-%     \cvitem{Description}
-%     \cvitem{Description}
-%   \cvitemend
 
-%   \cvheading
-%     {Company}{City, State}
-%     {Title}{06/2019 - 09/2021}
-%   \cvitemstart
-%     \cvitem{Description}
-%     \cvitem{Description}
-%   \cvitemend
-
-%   \cvheading
-%     {Company}{City, State}
-%     {Title}{12/2018 - 06/2019}
-%   \cvitemstart
-%     \cvitem{Description}
-%   \cvitemend
-% \cvheadingend
 
 \section{Education}
 \cvheadingstart
@@ -157,17 +131,21 @@
     {Shanghai Jiao Tong University}{Shanghai, China}
     {Bachelor's degree, School of artificial intelligence}{09/2024 - present (Still freshman year)}
 
-    GPA: 4.1/4.3 \textbf{(Ranked 1 out of 62)}
+    GPA: 4.12/4.3 \textbf{(Ranked 1 out of 62)}
+
+    Score: 93.6/100
 
     Scholarships: Zhiyuan Honor Scholarships
-    
     
     Highly-Graded Major courses:
     \begin{enumerate}
         \item Linear Algebra (Honor): A+ (98)
         \item Fundamental of Programming (Honor): A+ (98)
+        \item College Physics: A+ (96)
         \item Introduction to Artificial Intelligence: A+ (95)
     \end{enumerate}
+
+    \textbf{16} courses achieved A/A+, including \textbf{all major-related courses}, with \textbf{8} courses earning A+.
     
 
 
@@ -176,19 +154,6 @@
     {}{09/2021 - 06/2024}
 \cvheadingend
 
-\section{Skills}
-\textbf{Programming Languages}: Python (Proficient), C++ (Proficient), C, HTML, Rust.
-
-\textbf{Tools}: Git, LaTeX, Shell, Docker.
-
-\textbf{Python Modules}: Torch (Proficient), Numpy, Pandas, Matplotlib.
-
-\textbf{ML \& DL}: Familiar with Deep Learning architectures and model training techniques.
-
-\textbf{Languages}: Chinese (native), English (fluent, CET-4: 611).
-
-
-
 \vspace{-5pt}
 
 
@@ -196,22 +161,30 @@
 
 {\bfseries\selectfont Data\_Structure\_Awesome} (C++)
 
-\url{https://github.com/xiyuanyang-code/Data_structure}
+\url{https://github.com/xiyuanyang-code/Data-Structure-Awesome}
 
-The C++ implementation of various data structures and classic algorithms. As the final project for \textbf{CS0501H} (with ACM Honor Class students), I implemented several STL containers, including std::vector, std::list, std::priority\_queue, std::linked\_hashmap, and std::map, with the total repository code exceeding \textbf{12,000 line}s.
+C++ implementations of various data structures and classic algorithms. As the final project for \textbf{CS0501H} (with ACM Honor Class students), I implemented several STL containers, including \texttt{std::vector}, \texttt{std::list}, \texttt{std::priority\_queue}, \texttt{std::linked\_hashmap} and \texttt{std::map}, with the total repository code exceeding \textbf{12,000 line}s.
 \newline
 
-\textbf{RAG Blog Content Retrieval} (Python)
+% todo: to be finished in the future
+% \textbf{RAG Blog Content Retrieval} (Python)
 
-\url{https://github.com/xiyuanyang-code/RAG_blog_content_retrieval}
+% \url{https://github.com/xiyuanyang-code/RAG_blog_content_retrieval}
 
-Using \textbf{RAG (Retrieval-Augmented Generation)}, I implemented a system to crawl and retrieve content from specific blogs, along with a simple web UI frontend, enabling LLMs to efficiently search and access the target blog’s content.
-\newline
+% Using \textbf{RAG (Retrieval-Augmented Generation)}, I implemented a system to crawl and retrieve content from specific blogs, along with a simple web UI frontend, enabling LLMs to efficiently search and access the target blog’s content.
+% \newline
 
 \textbf{Camel multi-agent English Essay Revision helper} (Python)
 \url{https://github.com/xiyuanyang-code/Camel-Agent-English-Essay-Revision} 
 
 As an enthusiast of multi-agent systems, I implemented a collaborative blog post revision system using Camel-AI's multi-agent framework. In practical use, this system outperforms simple prompt engineering with a single LLM.
+\newline
+
+\textbf{Vosk-Based Voice Translation} (Python)
+
+\url{https://github.com/xiyuanyang-code/voice_translation}
+
+A Vosk-based Chinese-English bilingual speech recognition Python Application.
 \newline
 
 \textbf{My Technical Blog} (HTML)
@@ -223,17 +196,31 @@ Maintainer of \href{https://xiyuanyang-code.github.io}{my technical blog}. I reg
 
 I am always an active committer on \href{https://github.com/xiyuanyang-code}{GitHub} with more than 20 open-sourced repositories. I'm passionate about engineering projects and a strong advocate for open-source philosophy.
 
+\section{Skills}
+\textbf{Programming Languages}: Python (Proficient), C++ (Proficient), C, HTML, CSS, JavaScript, Rust.
+
+\textbf{Tools}: Git, LaTeX, Shell, Docker.
+
+\textbf{Python Modules}: Torch (Proficient), Numpy, Pandas, Matplotlib.
+
+\textbf{ML \& DL}: Familiar with Deep Learning architectures and model training techniques.
+
+\textbf{Languages}: Chinese (native), English (fluent, CET-4: 611).
+
+
 \section{Research}
 
 My research interests lie in \textbf{Multi-Agent Systems} and \textbf{LLM Reasoning}. 
 
 \textbf{Undergraduate Research Assistant}, MediaBrain, SJTU, supervised by Siheng Chen.
 
-\subsection{Extracurricular}
 
-Several landmark courses learned after class, including \textbf{Introduction to Algorithms} (MIT 6.006), \textbf{Fundamentals of Machine Learning}, \textbf{Large Language Model Agents} (Berkeley, CS294/194-196), etc. 
+% ! remove this, this is unnecessary in resume pages
+% \subsection{Extracurricular}
 
-Through these, I've developed foundational knowledge in traditional machine learning, deep neural networks, and agent architectures.
+% Several landmark courses learned after class, including \textbf{Introduction to Algorithms} (MIT 6.006), \textbf{Fundamentals of Machine Learning}, \textbf{Large Language Model Agents} (Berkeley, CS294/194-196), etc. 
+
+% Through these, I've developed foundational knowledge in traditional machine learning, deep neural networks, and agent architectures.
 
 
 
