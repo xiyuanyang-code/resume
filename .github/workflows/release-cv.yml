@@ -15,18 +15,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install pdflatex
-        run: sudo apt-get update && sudo apt-get install -y texlive-latex-base
-
-      - name: Update texfile and compile
-        run: bash scripts/update.sh
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
           body: |
             This release includes the latest version of the CV.
-          files: resume_pdf/CV_en.pdf
+          files: build/CV_en.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
