@@ -5,7 +5,6 @@ on:
     tags:
       - 'v*'   # Only trigger on tag push
 
-
 jobs:
   create_release:
     runs-on: ubuntu-latest
@@ -15,6 +14,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Install pdflatex
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-base
+
+      - name: Update texfile and compile
+        run: bash scripts/update.sh
 
       - name: Create Release
         id: create_release

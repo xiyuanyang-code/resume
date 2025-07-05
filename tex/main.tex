@@ -1,0 +1,266 @@
+%------------------------
+% Ethan's Résumé Template
+% Author: necusjz
+% License: CC-BY-4.0
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{bm}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\usepackage{hyperref}
+\definecolor{lightblue}{RGB}{173, 216, 230} 
+\hypersetup{
+    colorlinks = true,  % 启用超链接颜色（否则会用方框）
+    urlcolor   = blue,  % 设置URL链接颜色为蓝色
+}
+\input{glyphtounicode}
+
+% font options
+\usepackage{newpxtext}
+\linespread{1.05}  % palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}  % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+
+% subsection formatting
+\titleformat{\subsection}{
+  \vspace{-2pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% custom commands
+\newcommand{\cvitem}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\twopartheader}[2]{
+  \vspace{-2pt}\noindent
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    #1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\cvheadingend}{\end{itemize}}
+\newcommand{\cvitemstart}{\begin{itemize}[label=\textopenbullet]\justifying}
+\newcommand{\cvitemend}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\cvskill}[2]{
+  \textcolor{black}{\textbf{#1}}\hfill
+  \foreach \x in {1,...,5}{%
+    \space{\ifnumgreater{\x}{#2}{\color{black!80!white!20}}{\color{black}}\faSquare}}\par%
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+
+% =======================begin==============================
+\begin{document}
+
+% contact information
+\begin{center}
+  \textbf{\LARGE\scshape Xiyuan Yang} \\
+  \vspace{1pt}\small
+  \href{mailto:}{yangxiyuan@sjtu.edu.cn}
+  $\ \diamond\ $
+  Shanghai Jiao Tong University
+  $\ \diamond\ $
+  Shanghai, China
+  \\
+  Github: \href{https://github.com/xiyuanyang-code}{xiyuanyang-code}
+  % $\ \diamond\ $
+  \\
+  Online Resume: \href{https://xiyuanyang-code.github.io/resume}{https://xiyuanyang-code.github.io/resume/}
+\end{center}
+
+% \section{Professional Experience}
+% \cvheadingstart
+%   \cvheading
+%     {Company}{City, State}
+%     {Title}{09/2021 - Present}
+%   \cvitemstart
+%     \cvitem{Description}
+%     \cvitem{Description}
+%     \cvitem{Description}
+%     \cvitem{Description}
+%   \cvitemend
+
+%   \cvheading
+%     {Company}{City, State}
+%     {Title}{06/2019 - 09/2021}
+%   \cvitemstart
+%     \cvitem{Description}
+%     \cvitem{Description}
+%   \cvitemend
+
+%   \cvheading
+%     {Company}{City, State}
+%     {Title}{12/2018 - 06/2019}
+%   \cvitemstart
+%     \cvitem{Description}
+%   \cvitemend
+% \cvheadingend
+
+\section{Education}
+\cvheadingstart
+  \cvheading
+    {Shanghai Jiao Tong University}{Shanghai, China}
+    {Bachelor's degree, School of artificial intelligence}{09/2024 - present (Still freshman year)}
+
+    GPA: 4.1/4.3 \textbf{(Ranked 1 out of 62)}
+
+    Scholarships: Zhiyuan Honor Scholarships
+    
+    
+    Highly-Graded Major courses:
+    \begin{enumerate}
+        \item Linear Algebra (Honor): A+ (98)
+        \item Fundamental of Programming (Honor): A+ (98)
+        \item Introduction to Artificial Intelligence: A+ (95)
+    \end{enumerate}
+    
+
+
+  \cvheading
+    {High school affiliated to Nanjing Normal University}{Nanjing, China}
+    {}{09/2021 - 06/2024}
+\cvheadingend
+
+\section{Skills}
+\textbf{Programming Languages}: Python (Proficient), C++ (Proficient), C, HTML, Rust.
+
+\textbf{Tools}: Git, LaTeX, Shell, Docker.
+
+\textbf{Python Modules}: Torch (Proficient), Numpy, Pandas, Matplotlib.
+
+\textbf{ML \& DL}: Familiar with Deep Learning architectures and model training techniques.
+
+\textbf{Languages}: Chinese (native), English (fluent, CET-4: 611).
+
+
+
+\vspace{-5pt}
+
+
+\section{Technical Projects}
+
+{\bfseries\selectfont Data\_Structure\_Awesome} (C++)
+
+\url{https://github.com/xiyuanyang-code/Data_structure}
+
+The C++ implementation of various data structures and classic algorithms. As the final project for \textbf{CS0501H} (with ACM Honor Class students), I implemented several STL containers, including std::vector, std::list, std::priority\_queue, std::linked\_hashmap, and std::map, with the total repository code exceeding \textbf{12,000 line}s.
+\newline
+
+\textbf{RAG Blog Content Retrieval} (Python)
+
+\url{https://github.com/xiyuanyang-code/RAG_blog_content_retrieval}
+
+Using \textbf{RAG (Retrieval-Augmented Generation)}, I implemented a system to crawl and retrieve content from specific blogs, along with a simple web UI frontend, enabling LLMs to efficiently search and access the target blog’s content.
+\newline
+
+\textbf{Camel multi-agent English Essay Revision helper} (Python)
+\url{https://github.com/xiyuanyang-code/Camel-Agent-English-Essay-Revision} 
+
+As an enthusiast of multi-agent systems, I implemented a collaborative blog post revision system using Camel-AI's multi-agent framework. In practical use, this system outperforms simple prompt engineering with a single LLM.
+\newline
+
+\textbf{My Technical Blog} (HTML)
+
+\url{https://xiyuanyang-code.github.io} 
+
+Maintainer of \href{https://xiyuanyang-code.github.io}{my technical blog}. I regularly publish technical content focusing on computer science and AI. To \href{https://xiyuanyang-code.github.io/Blog-word-counting/}{date}, I have authored \textbf{over 100 articles with a cumulative word count exceeding 340,000 words}.
+\newline
+
+I am always an active committer on \href{https://github.com/xiyuanyang-code}{GitHub} with more than 20 open-sourced repositories. I'm passionate about engineering projects and a strong advocate for open-source philosophy.
+
+\section{Research}
+
+My research interests lie in \textbf{Multi-Agent Systems} and \textbf{LLM Reasoning}. 
+
+\textbf{Undergraduate Research Assistant}, MediaBrain, SJTU, supervised by Siheng Chen.
+
+\subsection{Extracurricular}
+
+Several landmark courses learned after class, including \textbf{Introduction to Algorithms} (MIT 6.006), \textbf{Fundamentals of Machine Learning}, \textbf{Large Language Model Agents} (Berkeley, CS294/194-196), etc. 
+
+Through these, I've developed foundational knowledge in traditional machine learning, deep neural networks, and agent architectures.
+
+
+
+\section{Awards and Certifications}
+
+
+
+\twopartheader{\textbf{Zhiyuan Honor Scholarships}}{2024}
+\newline
+
+\twopartheader{\textbf{Honorable Mention in MCM}}{2025}
+
+
+Honorable Mention, COMAP Mathematical Contest in Modeling / Interdisciplinary Contest in Modeling (MCM/ICM).
+
+
+2025-C: Models for Olympic Medal Tables.
+
+% \section{Misc.}
+% \cvheadingstart
+% \item
+% \cvitemstart
+%   \cvitem{Licenses \& certifications}
+%   \cvitem{Volunteering}
+%   \cvitem{\href{https://arxiv.org/}{Publications}}
+%   \cvitem{\href{https://patents.google.com/}{Patents}}
+% \cvitemend
+% \cvheadingend
+
+\end{document}
