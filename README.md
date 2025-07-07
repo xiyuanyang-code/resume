@@ -2,6 +2,14 @@
     <h1>Hello, I am Xiyuan Yang!👋👋👋😍</h1>
 </header>
 
+<!-- feat: add what i am doing -->
+<section>
+    <li>I am working on <b>a multi-agent system</b> for GUI-Agent.</li>
+    <li>I am studying reinforcement learning and more advanced techniques of transformers.</li>
+    <li>I am working on <b>Factor Mining</b> for my summer project.</li>
+    <li>I am very happy because the summer vacation is coming!</li>
+</section>
+
 
 <section>
     <h2>About Me</h2>
