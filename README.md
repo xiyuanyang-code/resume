@@ -3,17 +3,17 @@
 </header>
 
 <!-- feat: add what i am doing -->
-<section>
-    <li>I am working on <b>a multi-agent system</b> for GUI-Agent.</li>
-    <li>I am studying reinforcement learning and more advanced techniques of transformers.</li>
-    <li>I am working on <b>Factor Mining</b> for my summer project.</li>
-    <li>I am very happy because the summer vacation is coming!</li>
+<section> 
+    <li>Currently developing <b>a multi-agent system</b> for GUI-Agent.</li> 
+    <li>Learning advanced reinforcement learning techniques and transformer architectures.</li> 
+    <li>Leading a summer research project focused on <b>Factor Mining</b> methodologies.</li> 
 </section>
 
 
 <section>
     <h2>About Me</h2>
-    <p>I am <b>Xiyuan Yang (杨希渊)</b>, a student at Shanghai Jiao Tong University, School of Artificial Intelligence. I am currently pursuing bachelor's degree in artificial intelligence, interested in <b>Reinforcement Learning, multi-agent systems and LLM reasoning</b>.</p>
+<!--     <p>I am <b>Xiyuan Yang (杨希渊)</b>, a student at Shanghai Jiao Tong University, School of Artificial Intelligence. I am currently pursuing bachelor's degree in artificial intelligence, interested in <b>Reinforcement Learning, multi-agent systems and LLM reasoning</b>.</p> -->
+    <p>I am Xiyuan Yang (杨希渊), a rising sophomore pursuing a Bachelor's degree in <b>Artificial Intelligence</b> at <b>Shanghai Jiao Tong University (SJTU)</b>, School of Artificial Intelligence. My academic interests lie in Multi-Agent Systems, and LLM Reasoning</p>
     <p>For more information, please goto <a href="https://xiyuanyang-code.github.io/resume">My Resume</a>.</p>
 </section>
 
@@ -48,7 +48,7 @@
     <h3>Programming Languages & Tools</h3>
 <p align="left" style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="height:40px;width:auto;max-width:40px;" alt="C++"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="height:40px;width:auto;max-width:40px;" alt="C"/>
+<!--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="height:40px;width:auto;max-width:40px;" alt="C"/> -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="height:40px;width:auto;max-width:40px;" alt="Python"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="height:40px;width:auto;max-width:40px;" alt="HTML5"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" style="height:40px;width:auto;max-width:40px;" alt="Rust"/>
@@ -81,7 +81,7 @@
 
 </section>
 
-## My Github
+## 📊 GitHub Stats:
 <section>
 <p><b>I am always an active commiter! Love Coding Everyday! 🫡😍</b></p>
 
@@ -89,9 +89,10 @@
 
 <p> <a href="https://github.com/ryo-ma/github-profile-trophy"> <img src="https://github-profile-trophy.vercel.app/?username=xiyuanyang-code&margin-w=20&margin-h=15&no-bg=true&row=1" alt="xiyuanyang-code"/></a> </p>
 
-<p>&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=xiyuanyang-code&show_icons=true&locale=en" alt="xiyuanyang-code" /></p>
+<p>&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=xiyuanyang-code&show_icons=true&theme=chartreuse&hide_border=false&include_all_commits=true&count_private=true&hide_title=false&show=prs_merged,issues_closed&rank_icon=percentile" alt="xiyuanyang-code" /></p>
 
 <p><img src="https://github-readme-streak-stats.herokuapp.com/?user=xiyuanyang-code&"alt="xiyuanyang-code" /></p>
+
 
 </section>
 <section>
