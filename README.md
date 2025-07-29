@@ -11,23 +11,22 @@
 
 
 <section>
-    <h2>About Me</h2>
-<!--     <p>I am <b>Xiyuan Yang (杨希渊)</b>, a student at Shanghai Jiao Tong University, School of Artificial Intelligence. I am currently pursuing bachelor's degree in artificial intelligence, interested in <b>Reinforcement Learning, multi-agent systems and LLM reasoning</b>.</p> -->
-    <p>I am Xiyuan Yang (杨希渊), a rising sophomore pursuing a Bachelor's degree in <b>Artificial Intelligence</b> at <b>Shanghai Jiao Tong University (SJTU)</b>, School of Artificial Intelligence. My academic interests lie in Multi-Agent Systems, and LLM Reasoning</p>
-    <p>For more information, please goto <a href="https://xiyuanyang-code.github.io/resume">My Resume</a>.</p>
+<h2>About Me</h2>
+<p>I am Xiyuan Yang (杨希渊), a rising sophomore pursuing a Bachelor's degree in <b>Artificial Intelligence</b> at <b>Shanghai Jiao Tong University (SJTU)</b>, School of Artificial Intelligence. My academic interests lie in Multi-Agent Systems, and LLM Reasoning.</p>
+<p>For more information, please goto <a href="https://xiyuanyang-code.github.io/resume">My Resume</a>.</p>
 </section>
 
 <section>
     <h2>Connect with Me</h2>
-    <ul>
+    <li>
         <a href="https://xiyuanyang-code.github.io">My personal Blog</a>
-    </ul>
-    <ul>
+    </li>
+    <li>
         <a href="mailto:yangxiyuan@sjtu.edu.cn">yangxiyuan@sjtu.edu.cn</a>
-    </ul>
-    <ul>
+    </li>
+    <li>
         <a href="https://xiyuanyang-code.github.io/resume/">My Resume</a>
-    </ul>
+    </li>
     
 </section>
 
@@ -48,7 +47,6 @@
     <h3>Programming Languages & Tools</h3>
 <p align="left" style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="height:40px;width:auto;max-width:40px;" alt="C++"/>
-<!--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="height:40px;width:auto;max-width:40px;" alt="C"/> -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="height:40px;width:auto;max-width:40px;" alt="Python"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="height:40px;width:auto;max-width:40px;" alt="HTML5"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" style="height:40px;width:auto;max-width:40px;" alt="Rust"/>
@@ -101,12 +99,14 @@
         <br>
         Score: 93.6/100
     <ul class="grades">
+        <li>Comprehensive Programming Practice: <b>A+ (100)</b></li>
         <li>Linear Algebra (Honor): <b>A+ (98)</b></li>
         <li>Fundamental of Programming (Honor): <b>A+ (98)</b></li> 
         <li>Physics I (Honor): <b>A+ (96)</b></li>
+        <li>Mathematical Analysis II (Honor): <b>A+ (95)</b></li>
         <li>Introduction to Artificial Intelligence: <b>A+ (95)</b></li>
     </ul>
-    <b>16</b> courses achieved A/A+, including <b>all major-related courses</b>, with <b>8</b> courses earning A+.
+    <b>17</b> courses achieved A/A+, including <b>all major-related courses</b>, with <b>9</b> courses earning A+.
 </section>
 
 <footer>
