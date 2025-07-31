@@ -95,9 +95,9 @@
 </section>
 <section>
     <h2>Grades</h2>
-        GPA: 4.13/4.3 (Ranking: <b>1</b> among 63)
+        GPA: 4.14/4.3 (Ranking: <b>1</b> among 63)
         <br>
-        Score: 93.6/100
+        Score: 94.0/100
     <ul class="grades">
         <li>Comprehensive Programming Practice: <b>A+ (100)</b></li>
         <li>Linear Algebra (Honor): <b>A+ (98)</b></li>
