@@ -21,6 +21,6 @@ jobs:
         with:
           body: |
             This release includes the latest version of the CV.
-          files: "build/Xiyuan Yang Resume.pdf"
+          files: "build/XiyuanYang-Resume.pdf"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
