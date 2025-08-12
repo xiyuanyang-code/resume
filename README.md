@@ -4,9 +4,10 @@
 
 <!-- feat: add what i am doing -->
 <section> 
-    <li>Currently developing <b>a multi-agent system</b> for GUI-Agent.</li> 
-    <li>Learning advanced reinforcement learning techniques and transformer architectures.</li> 
-    <li>Leading a summer research project focused on <b>Factor Mining</b> methodologies.</li> 
+<!--     <li>Currently developing <b>a multi-agent system</b> for GUI-Agent.</li>  -->
+<!--     <li>Learning advanced reinforcement learning techniques and transformer architectures.</li>  -->
+    <li>Leading a summer research project focused on <b>Timing Strategy</b> methodologies.</li> 
+    <li>Learning Fundamental architectures and tuning methods of Large Language Models.</li>
 </section>
 
 
