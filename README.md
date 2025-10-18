@@ -1,20 +1,26 @@
 <header>
-    <h1>Hello, I am Xiyuan Yang!👋👋👋😍</h1>
+    <h1>Hello, I am Xiyuan Yang! 👋</h1>
 </header>
 
-- Currently developing ProbeCode (<a href="https://github.com/xiyuanyang-code/ProbeCode">Source Code</a>), a coding agent.
+
+- My research interests lie in **constructing general autonomous agents** and **multi-agent collaborations**.
+    - Current Work about Agentic Tool Usage and MCP for ICLR-2026, [Info-Mosaic](https://dorothyduuu.github.io/Info-Mosaic/).
+    - Currently developing Coding Agent: ProbeCode (<a href="https://github.com/xiyuanyang-code/ProbeCode">Source Code</a>).
+    - Successfully deployed **PaperPulse**, Your Daily Latest Paper Acquisition Assistant, automatically pushing trending papers and Github repos with AI summary.
+        - To the [Latest Release](https://github.com/xiyuanyang-code/PaperPulse/releases/latest). 
     - More development projects are detailed in [ToolZoo](https://xiyuanyang-code.github.io/Tool-Zoo/developer.html).
-- Currently learning Rust. 🦀
-- Working on a research project focused on <b>Timing Strategy</b> methodologies.
-- Interested in multi-agent architectures, currently working on agent's benchmark.
-- Learning CS336 and CS224n, including fundamental architectures and tuning methods of Large Language Models.
+- In my downtime, I like to study stock time series prediction and quantitative factor mining. 
+    - Working on a research project focused on <b>Timing Strategy</b> methodologies.
 - Always writing technical blogs on my personal website: <a href="https://xiyuanyang-code.github.io/">Xiyuan Yang's Blog</a>.
+- My Current Lecture Notes for all kinds of courses.
+    - Link: [My Typst Note](https://github.com/xiyuanyang-code/My-Typst-Note/releases/latest).
+    - As a dedicated Typst enthusiast, I believe LaTeX simply isn't as user-friendly as Typst.😈 
 
 
 
 <section>
 <h2>About Me</h2>
-<p>I am Xiyuan Yang (杨希渊), a rising sophomore pursuing a Bachelor's degree in <b>Artificial Intelligence</b> at <b>Shanghai Jiao Tong University (SJTU)</b>, School of Artificial Intelligence. My academic interests lie in Multi-Agent Systems, and LLM Reasoning.</p>
+<p>I am Xiyuan Yang (杨希渊), a rising sophomore pursuing a Bachelor's degree in <b>Artificial Intelligence</b> at <b>Shanghai Jiao Tong University (SJTU)</b>, School of Artificial Intelligence. My academic interests lie in agents.</p>
 <p>For more information, please goto <a href="https://xiyuanyang-code.github.io/resume">My Resume</a>.</p>
 </section>
 
