@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# after you make your modifications
-bash scripts/update.sh
+# compile
+make silent
+make clean
 
 if [ ! -f "./build/XiyuanYang-Resume.pdf" ]; then
   echo "ERROR: Source file ./build/XiyuanYang-Resume.pdf not found!"
