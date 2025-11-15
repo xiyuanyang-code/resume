@@ -1,0 +1,221 @@
+%------------------------
+% Ethan's Résumé Template (XeLaTeX Chinese Version)
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+% 基础包
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{bm}
+\usepackage{marvosym}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+% ================= 字体设置 =================
+
+\linespread{1.05}
+
+% ================= 页面布局 =================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% 调整页边距
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% ================= Section 样式 =================
+\titleformat{\section}{
+  \vspace{-2pt}\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\titleformat{\subsection}{
+  \vspace{-2pt}\normalsize\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% ================= 自定义命令 =================
+\newcommand{\cvitem}[1]{
+  \item\small{{#1\vspace{-2pt}}}
+}
+
+\newcommand{\cvheading}[4]{
+  \vspace{-2pt}
+  \item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \small#3 & \small#4 \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\twopartheader}[2]{
+  \vspace{-2pt}
+  \noindent
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    #1 & #2 \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\cvheadingend}{\end{itemize}}
+\newcommand{\cvitemstart}{\begin{itemize}[label=\textopenbullet]\justifying}
+\newcommand{\cvitemend}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+% ===================== 正文开始 ======================
+\begin{document}
+
+% 联系方式
+\begin{center}
+  {\LARGE\bfseries 杨希渊} \\
+  \vspace{2pt}
+  \href{mailto:yangxiyuan@sjtu.edu.cn}{yangxiyuan@sjtu.edu.cn}
+  $\ \diamond\ $
+  上海交通大学
+  $\ \diamond\ $
+  上海，中国
+  \\
+  GitHub: \href{https://github.com/xiyuanyang-code}{https://github.com/xiyuanyang-code}
+  \\
+  简历主页：\href{https://xiyuanyang-code.github.io/cv}{https://xiyuanyang-code.github.io/cv/}
+\end{center}
+
+% ================= 教育 =================
+\section{教育背景}
+\cvheadingstart
+
+\cvheading
+{上海交通大学}{上海，中国}
+{人工智能学院·本科}{2024.09 -- 至今}
+
+GPA: 4.14/4.3（专业排名：\textbf{1/62}）
+
+成绩：94.0/100
+
+奖学金：国家奖学金（前 3\%）、致远荣誉奖学金（前 5\%）
+
+\begin{itemize}[nosep]
+  \item 编程综合实践：100/100
+  \item 线性代数（荣誉）：98/100
+  \item 程序设计思想与方法（荣誉）：98/100
+\end{itemize}
+
+共 \textbf{17} 门课程获得 A/A+，其中 \textbf{9 门为 A+}，涵盖全部专业核心课程。
+
+\cvheadingend
+
+% ================= 技术项目 =================
+\section{技术项目}
+
+\textbf{AlphaBuild：基于强化学习的因子挖掘系统}
+
+构建基于 PPO 的因子生成方法，改进 \href{https://github.com/RL-MLDM/alphagen}{AlphaGen} 框架，通过并行因子池与 PCA 选择增强回测表现。
+
+\medskip
+
+% todo add more technical projects
+
+\textbf{ProbeCode：基于 MCP 的智能编程 Agent}
+
+\url{https://github.com/xiyuanyang-code/ProbeCode}
+
+基于 MCP 框架搭建编程智能体，优化编程智能体长上下文记忆能力，实现对大型项目级代码库的精准理解。
+
+\medskip
+
+\textbf{技术博客}
+
+\url{https://xiyuanyang-code.github.io}
+
+累计发表 \textbf{120+} 篇文章，总字数 \textbf{48w+}。同时作为 GitHub 活跃贡献者，提交次数超 1700 余次。
+
+
+% ================= 科研 =================
+\section{科研经历}
+
+研究方向：\textbf{自主智能体、群体智能}
+
+本科期间于 \textbf{MAGIC 实验室}（导师：陈思衡）参与本科生科研实习工作，并发表多篇论文。
+
+\medskip
+
+\textbf{AppCopilot：移动端智能体系统}
+
+\url{https://arxiv.org/abs/2509.02444}  
+\url{https://github.com/OpenBMB/AppCopilot}（\textbf{600+ stars}）
+
+% todo optimize chinese version abstract
+面向当前多模态终端智能体“看不准、想不远、做不快”的三大痛点，在感知、规划、执行三层构建多模态多智能体端侧助理 AppCopilot，覆盖数据标注、模型训推、APP研发的全链路。
+
+\medskip
+
+\textbf{InfoMosaic-Bench：工具增强信息检索智能体基准}
+
+\url{https://arxiv.org/abs/2510.02271}  
+\url{https://github.com/DorothyDUUU/Info-Mosaic}（\textbf{100+ stars}）
+
+InfoMosaic-Bench 系首个专为\textbf{工具增强智能体}设计的多源信息检索基准，涵盖医学、金融、地图、视频、网页及跨领域整合六大领域。针对现有智能体过度依赖噪声化网络搜索且缺乏精准领域知识之弊，引入模型上下文协议对接数千专用工具，评估其与通用搜索协同解决复杂任务之能力。
+
+
+
+% ================= 技能 =================
+\newpage
+\section{技能}
+
+\begin{enumerate}[itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt]
+    \item \textbf{编程语言}：Python（熟练）、C++（熟练）、Rust、JavaScript、HTML、CSS  
+    \item \textbf{工具链}：Git、LaTeX、Shell、Docker 
+    \item \textbf{Python 库}：Torch（熟练）、Numpy、Pandas、Matplotlib、BeautifulSoup、FastMCP  
+    \item \textbf{机器学习、深度学习}：掌握深度学习模型网络架构与训练方法  
+    \item \textbf{大模型与智能体}：熟悉 LLM 架构、后训练增强、多智能体系统 
+    \item \textbf{语言能力}：中文（母语）、英语（CET-6: 584）
+\end{enumerate}
+
+
+% ================= 奖项 =================
+\section{奖项与荣誉}
+
+\textbf{2025 挑战杯 “揭榜挂帅” 赛道}
+
+挑战杯 “揭榜挂帅” 人工智能领域 多智能体赛道 擂主（特等奖第一名）
+
+\medskip
+
+\textbf{2025 本科生国家奖学金 (2/62)}
+
+\medskip
+
+\textbf{2025 MCM/ICM 美国大学生数学建模竞赛 M 奖}
+
+\medskip
+
+\textbf{2024 致远荣誉奖学金 (前 5\%)}
+
+
+\end{document}

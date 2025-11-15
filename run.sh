@@ -2,17 +2,16 @@
 
 # compile
 make silent
-make clean
 
-if [ ! -f "./build/XiyuanYang-Resume.pdf" ]; then
-  echo "ERROR: Source file ./build/XiyuanYang-Resume.pdf not found!"
-  echo "Available files in build/:"
-  ls -la ./build/ || true
+if [ ! -f "./cv/cv_en.pdf" ]; then
+  echo "ERROR: Source file ./cv	/cv_en.pdf not found!"
+  echo "Available files in cv	/:"
+  ls -la ./cv	/ || true
   exit 1
 fi
 
-if cp "./build/XiyuanYang-Resume.pdf" "./build/cv_en.pdf"; then
-  echo "SUCCESS: Copied XiyuanYang-Resume.pdf → cv_en.pdf"
+if cp "./cv/cv_en.pdf" "./cv/XiyuanYang-Resume.pdf"; then
+  echo "SUCCESS: Copied cv_en.pdf → XiyuanYang-Resume.pdf"
 else
   echo "ERROR: Failed to copy file (cp command failed)."
   exit 1
