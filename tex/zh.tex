@@ -7,14 +7,16 @@
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \usepackage{latexsym}
+% \setCJKmainfont{SimSun} 
+\setmainfont{Times New Roman}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{bm}
 \usepackage{marvosym}
 \usepackage{xcolor}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
@@ -116,9 +118,9 @@
 
 GPA: 4.14/4.3（专业排名：\textbf{1/62}）
 
-成绩：94.0/100
+核心学积分：94.0/100
 
-奖学金：国家奖学金（前 3\%）、致远荣誉奖学金（前 5\%）
+奖学金： 2025 年本科生国家奖学金（前 3\%）、2024, 2025 致远荣誉奖学金（前 5\%）、本科生优秀奖学金。
 
 \begin{itemize}[nosep]
   \item 编程综合实践：100/100
@@ -133,89 +135,128 @@ GPA: 4.14/4.3（专业排名：\textbf{1/62}）
 % ================= 技术项目 =================
 \section{技术项目}
 
-\textbf{AlphaBuild：基于强化学习的因子挖掘系统}
+\textbf{AlphaBuild: 基于强化学习优化的因子挖掘系统}
 
-构建基于 PPO 的因子生成方法，改进 \href{https://github.com/RL-MLDM/alphagen}{AlphaGen} 框架，通过并行因子池与 PCA 选择增强回测表现。
+作为 AI1803: 编程综合实践的课程大作业，带领团队成员构建基于强化学习 PPO 算法的因子生成算法，改进 \href{https://github.com/RL-MLDM/alphagen}{AlphaGen} 框架，通过并行因子池和 PCA 降维实现数据适配和算法适配。最终股票的回测表现超越基准方法。
 
 \medskip
 
-% todo add more technical projects
+\textbf{IntelliSearch: 全栈开发多源信息搜索增强智能体}
 
-\textbf{ProbeCode：基于 MCP 的智能编程 Agent}
+\url{https://github.com/xiyuanyang-code/IntelliSearch}
+
+\textbf{智搜}智能体开发的发起者和核心项目贡献者，基于智能体 MCP 协议构建高质量多源信息搜索工具并接入可扩展的统一框架，集成网页搜索、学术搜索、地理信息、视频媒体、本地数据库、代码执行等多源异构信息源，显著提升搜索增强智能体在复杂、多约束、跨领域信息需求下的检索与整合能力。
+
+\medskip
+
+\textbf{ProbeCode: MCP 框架驱动的编程智能体}
 
 \url{https://github.com/xiyuanyang-code/ProbeCode}
 
-基于 MCP 框架搭建编程智能体，优化编程智能体长上下文记忆能力，实现对大型项目级代码库的精准理解。
+基于 ReAct 智能体框架和智能体 MCP 工具调用协议搭建长上下文优化的编程智能体，实现智能体能够在项目级任务上理解全局代码，通过接入静态代码分析工具，解决传统 LLM 在超长、多文件代码库中上下文碎片化的问题，支持项目级代码理解、定位、推理与修改。
 
 \medskip
 
-\textbf{技术博客}
+\textbf{SAI Community}
+
+\url{https://sjtu-sai.github.io/SAI-Community/}
+
+上交大人工智能学院首个学生自建的高质量信息聚合平台的发起者和核心贡献者。同时作为学院学联\textbf{极客中心部部长}，负责组织日常活动和该网站的维护和更新工作，在学院内部引起广泛好评。
+
+\medskip
+
+\textbf{个人技术博客}
 
 \url{https://xiyuanyang-code.github.io}
 
-累计发表 \textbf{120+} 篇文章，总字数 \textbf{48w+}。同时作为 GitHub 活跃贡献者，提交次数超 1700 余次。
+长期维护个人技术博客，累计发表 \textbf{150+} 篇原创技术文章，总字数 \textbf{48 万+}，内容涵盖计算机基础、工程实践与前沿技术思考，注重问题抽象、原理分析与可复用经验总结。作为 GitHub 活跃贡献者，累计 1700+ 次提交，持续进行代码实践与技术迭代，具备良好的工程习惯与长期技术投入能力。
 
-
+\newpage
 % ================= 科研 =================
 \section{科研经历}
 
-研究方向：\textbf{自主智能体、群体智能}
+研究方向：\textbf{自主智能体、群体智能}。
 
-本科期间于 \textbf{MAGIC 实验室}（导师：陈思衡）参与本科生科研实习工作，并发表多篇论文。
+旨在探索并拓展语言模型智能体在工具调用、推理泛化与长程记忆等方面增强下的能力边界以及多智能体协作系统中的优化。
 
-\medskip
-
-\textbf{AppCopilot：移动端智能体系统}
-
-\url{https://arxiv.org/abs/2509.02444}  
-\url{https://github.com/OpenBMB/AppCopilot}（\textbf{600+ stars}）
-
-% todo optimize chinese version abstract
-面向当前多模态终端智能体“看不准、想不远、做不快”的三大痛点，在感知、规划、执行三层构建多模态多智能体端侧助理 AppCopilot，覆盖数据标注、模型训推、APP研发的全链路。
+本科期间于 \textbf{MAGIC 实验室}（导师：\textbf{陈思衡副教授}）参与本科生科研实习工作。
 
 \medskip
 
-\textbf{InfoMosaic-Bench：工具增强信息检索智能体基准}
+\textbf{InfoMosaic-Bench：工具增强信息检索智能体数据集}
 
 \url{https://arxiv.org/abs/2510.02271}  
+
 \url{https://github.com/DorothyDUUU/Info-Mosaic}（\textbf{100+ stars}）
 
-InfoMosaic-Bench 系首个专为\textbf{工具增强智能体}设计的多源信息检索基准，涵盖医学、金融、地图、视频、网页及跨领域整合六大领域。针对现有智能体过度依赖噪声化网络搜索且缺乏精准领域知识之弊，引入模型上下文协议对接数千专用工具，评估其与通用搜索协同解决复杂任务之能力。
+InfoMosaic-Bench 系首个专为\textbf{工具增强智能体}设计的多源信息检索基准，涵盖医学、金融、地图、视频、网页及跨领域整合六大领域。针对现有智能体过度依赖噪声化网络搜索且缺乏精准领域知识之弊，引入若干领域内高质量 MCP 工具，评估其与通用搜索协同解决复杂任务之能力。
+
+\textbf{ICLR 2026} 论文在投，作为\textbf{论文第三作者}参与，负责数据集构建中的重要子模块工作，主要负责数据筛选自动化流程的设计与实现、基准实验的运行与分析，并参与核心数据集的迭代优化。
+
+\medskip
+
+\textbf{AppCopilot: 多模态多智能体驱动的通用型跨应用端侧助理}
+
+\url{https://arxiv.org/abs/2509.02444}  
+
+\url{https://github.com/OpenBMB/AppCopilot}（\textbf{600+ stars}）
+
+面向 GUI 智能体“看不准、想不远、做不快”的三大痛点，在感知、规划、执行三层构建多模态多智能体端侧助理AppCopilot。技术覆盖数据标注、模型训推、APP研发的全链路，支持通信办理、权益领取、适老与视障友好操作等场景。该项目获得 2025 \textbf{挑战杯}揭榜挂帅人工智能领域多智能体赛道\textbf{擂主}（特等奖第一名）。作为团队核心成员参与，独立负责UI 模块方案探索、API 调用模块开发以及最终版本的代码重构等核心工作，并且参与训练数据标注合成、论文与技术报告撰写等工作。
 
 
 
-% ================= 技能 =================
-\newpage
+
+
+
+
+
+
 \section{技能}
 
 \begin{enumerate}[itemsep=2pt, topsep=2pt, parsep=0pt, partopsep=0pt]
-    \item \textbf{编程语言}：Python（熟练）、C++（熟练）、Rust、JavaScript、HTML、CSS  
-    \item \textbf{工具链}：Git、LaTeX、Shell、Docker 
-    \item \textbf{Python 库}：Torch（熟练）、Numpy、Pandas、Matplotlib、BeautifulSoup、FastMCP  
-    \item \textbf{机器学习、深度学习}：掌握深度学习模型网络架构与训练方法  
-    \item \textbf{大模型与智能体}：熟悉 LLM 架构、后训练增强、多智能体系统 
-    \item \textbf{语言能力}：中文（母语）、英语（CET-6: 584）
+    \item \textbf{编程语言}：\texttt{Python}（熟练）、\texttt{C++}（熟练）、\texttt{Rust}、\texttt{JavaScript}、\texttt{HTML}、\texttt{CSS}  
+    \item \textbf{工具链}：\texttt{Git}、\LaTeX、\texttt{Shell}、\texttt{Docker} 
+    \item \textbf{Python 库}：\texttt{torch}（熟练）、\texttt{numpy}、\texttt{pandas}、\texttt{Matplotlib}、\texttt{BeautifulSoup}、\texttt{FastMCP}  
+    \item \textbf{机器学习、深度学习}：掌握深度学习常见模型网络架构与训练方法。
+    \item \textbf{大模型与智能体}：熟悉 LLM 架构、后训练增强、多智能体系统。
+    \item \textbf{语言能力}：英语（CET-6: 584）
 \end{enumerate}
 
 
 % ================= 奖项 =================
 \section{奖项与荣誉}
 
-\textbf{2025 挑战杯 “揭榜挂帅” 赛道}
+\textbf{2025 挑战杯 “揭榜挂帅” 擂台赛}
 
-挑战杯 “揭榜挂帅” 人工智能领域 多智能体赛道 擂主（特等奖第一名）
-
-\medskip
-
-\textbf{2025 本科生国家奖学金 (2/62)}
+挑战杯 “揭榜挂帅” 人工智能领域 多智能体赛道 \textbf{擂主（特等奖第一名）}
 
 \medskip
 
-\textbf{2025 MCM/ICM 美国大学生数学建模竞赛 M 奖}
+\textbf{2025 本科生国家奖学金（前 3\%）}
 
 \medskip
 
-\textbf{2024 致远荣誉奖学金 (前 5\%)}
+\textbf{2025 MCM/ICM 美国大学生数学建模竞赛 H 奖}
+
+\medskip
+
+\textbf{2025 上海交通大学校“三好学生”}
+
+\medskip
+
+\textbf{2024 致远荣誉奖学金 (前 50\%)}
+
+\medskip
+
+\textbf{2025 致远荣誉奖学金 (前 50\%)}
+
+\medskip
+
+\textbf{2025 上海交通大学本科生优秀奖学金}
+
+\medskip
+
+\textbf{2025 上海交通大学寒假社会实践校级“先进个人”}
 
 
 \end{document}
