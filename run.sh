@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf cv
+
 # compile
 make silent
 
