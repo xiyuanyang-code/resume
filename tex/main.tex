@@ -10,6 +10,7 @@
 \usepackage{titlesec}
 \usepackage{bm}
 \usepackage{marvosym}
+\usepackage{multicol}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
@@ -27,6 +28,7 @@
     colorlinks = true,  
     urlcolor   = blue,  
 }
+\setlength{\multicolsep}{0pt}
 \input{glyphtounicode}
 
 % font options
@@ -130,32 +132,37 @@
 {Shanghai Jiao Tong University}{Shanghai, China}
 {School of Artificial Intelligence}{09/2024 - present}
 
-GPA: 4.1/4.3 (Ranked \textbf{2} out of 66)
+\begin{multicols}{2}
+GPA: \textbf{4.1}/4.3 (Ranked \textbf{2} out of 66)
 
-Score: 93.9/100
+Score: \textbf{93.9}/100
+\end{multicols}
+
 
 Scholarships: 
 
 \begin{itemize}[nosep]
   \item National Scholarship (2025) (first \textbf{3}\%)
   \item Zhiyuan Honor Scholarship (2024, 2025)
-  \item "Han Ying Ju Hua" Scholarship (2025, 15 per year.)
+  \item "Han Ying Ju Hua" Scholarship (2025, \textbf{15} per year.)
   \item SJTU Undergraduate Excellence Scholarship (2024)
 \end{itemize}
 
 High graded courses: 
 
+\begin{multicols}{2}
 \begin{itemize}[nosep]
-  \item Comprehensive Programming Practice: \textbf{100/100}
-  \item Probability and Statistics (Honor): \textbf{100/100}
-  \item Algorithm Design and Analysis: \textbf{100/100}
-  \item Numerical Analysis: \textbf{100/100}
-  \item Linear Algebra (Honor): 98/100
-  \item Fundamentals of Programming (Honor): 98/100
-  \item Fundamentals of ML, DL and RL: 98/100
+  \item Comprehensive Programming: \textbf{100}
+  \item Prob. and Statistics (Honor): \textbf{100}
+  \item Algorithm Design: \textbf{100}
+  \item Numerical Analysis: \textbf{100}
+  \item Linear Algebra (Honor): 98
+  \item C++ Programming Design (Honor): 98
+  \item Fundamentals of Artificial Intelligence (ML, DL and RL): 98
 \end{itemize}
+\end{multicols}
 
-\textbf{22} courses achieved A/A+ (14 A+), including \textbf{all major-related courses}.
+\textbf{22} courses achieved A/A+ (\textbf{14 A+}), including \textbf{all major-related courses}.
 
 \cvheadingend
 \vspace{-5pt}
@@ -163,66 +170,59 @@ High graded courses:
 
 \section{Research}
 
-My research interests lie in \textbf{Agentic AI} and  \textbf{Multi-Agent Systems}, dedicated to pushing the boundaries of intelligence in large language models.
+My research interests lie in building \textbf{General Self-Evolving Agentic AI}, dedicated to pushing the boundaries of intelligence in large language models. 
 
-Undergraduate researcher in \textbf{MAGIC}(\textbf{M}ulti-\textbf{A}gent \textbf{G}overnance \& \textbf{I}ntelligence \textbf{C}rew), supervised by Siheng Chen.
+Currently Undergraduate researcher in \textbf{MAGIC} (\textbf{M}ulti-\textbf{A}gent \textbf{G}overnance \& \textbf{I}ntelligence \textbf{C}rew), supervised by \textbf{\href{https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=zh-CN}{Siheng Chen}}.
 \newline
 
 \textbf{InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents}
 
-\textbf{ICLR 2026 Poster}
+\textbf{ICLR 2026 Poster (3rd Author)}
 
 \url{https://arxiv.org/abs/2510.02271}
 
 Pioneered \textbf{InfoMosaic-Bench}, the first benchmark dedicated to multi-source information seeking in LLM agents, demonstrating the critical need to integrate general-purpose web search with thousands of domain-specific tools via \textbf{MCP} (Model Context Protocol). Experiments revealed that web information alone is insufficient (GPT-5 Acc: 38.2\%) for information seeking due to incorrect tool usage/selection.
 \newline 
 
+\textbf{InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents}
+
+\textbf{ICML 2026 (In Submission, Co-first author)}
+
+\url{https://arxiv.org/abs/2510.02271}
+
+Pioneered \textbf{MCP-Persona}, the first benchmark for evaluating LLM agents on \textbf{personalized} Model Context Protocol (MCP) tools. MCP-Persona captures real-world challenges of tools interacting with individual accounts and local databases across diverse platform including Reddit, Xiaohongshu, Lark, and Slack. Extensive evaluations of state-of-the-art agents reveal substantial deficiencies in personalized tool utilization.
+\newline 
+
 \textbf{AppCopilot: Toward General, Accurate, Long‑Horizon, and Efficient Mobile Agent}
-\url{https://arxiv.org/abs/2509.02444}
 
-\url{https://github.com/OpenBMB/AppCopilot} (\textbf{600+} stars.)
+\textbf{ICML 2026 (In Submission, Position-Track)}
 
-Developed \textbf{AppCopilot}, a multi-modal, multi-agent on-device assistant that addresses core challenges in the mobile-agent landscape. AppCopilot significantly improves generalization, on-screen interaction accuracy, and long-horizon task completion, while also optimizing performance and efficiency on resource-constrained mobile devices.
+\url{https://github.com/OpenBMB/AppCopilot} (\textbf{300+} stars.)
+
+Developed \textbf{AppCopilot}, a multi-modal, multi-agent on-device assistant that addresses core challenges in the mobile-agent landscape. AppCopilot significantly improves generalization, on-screen interaction accuracy, and long-horizon task completion, while optimizing performance and efficiency on mobile devices.
 
 
 
 \section{Technical Projects}
 
 % ============== Project1 AlphaBuild ============== %
-\textbf{AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data}
+\textbf{AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data with Reinforcement Learning}
 
 Leading AlphaBuild as the final project of course \textbf{AI1803}, an RL-based methodology using PPO to optimize factor mining process based on \href{https://github.com/RL-MLDM/alphagen}{AlphaGen}, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
 \newline
 
-\textbf{IntelliSearch: Multi-Source Search Augmented Agents}
+\textbf{IntelliSearch: Unifying Search, Empowering Action for Tool Calling Autonomous Agents}
 
-\url{https://github.com/xiyuanyang-code/IntelliSearch}
+\url{https://github.com/SJTU-SAI-GeekCenter/IntelliSearch}
 
-Core contributor of \textbf{IntelliSearch}, an MCP-based intelligent search aggregation platform that integrates multi-domain tools (web, academic, geo, media, databases, and code execution) to significantly extend agents’ capability in complex, multi-source information retrieval tasks.
+Core contributor of \textbf{IntelliSearch}, an MCP-rooted search agent evolved into a decoupled, lightweight infrastructure for the Agentic ecosystem. By unifying context memory, dynamic tool scheduling, and multi-agent communication, it provides developers with a perfectly balanced and adaptable framework.
 \newline
 
-\textbf{ProbeCode: AI coding Agent with MCP Framework}
 
-\url{https://github.com/xiyuanyang-code/ProbeCode}
+\textbf{Open Source \& Community Contributions} \\
+\url{https://xiyuanyang-code.github.io} \\ \url{https://sjtu-sai.github.io/SAI-Community/}
 
-ProbeCode: AI coding agent integrating static code inspection with a ReAct framework to understand and memorize long-context code. It operates and comprehends code at the project level and tackles the core challenge of long and complex codebases exceeding standard LLM context windows.
-\newline
-
-\textbf{My Technical Blog}
-
-\url{https://xiyuanyang-code.github.io}
-
-Maintainer of \href{https://xiyuanyang-code.github.io}{my technical blog}. I regularly publish technical content focusing on computer science and AI. To \href{https://xiyuanyang-code.github.io/Blog-word-counting/}{date}, I have authored \textbf{over 150 articles with a cumulative word count exceeding 480,000 words}. Active GitHub committer (\href{https://github.com/xiyuanyang-code}{xiyuanyang-code}) with 30+ open-source repositories. I build and open-source user-friendly tools I personally find useful (See \href{https://xiyuanyang-code.github.io/Tool-Zoo/}{Tool Zoo}), driven by a passion for engineering and open source.
-\newline
-
-\textbf{SAI Community}
-
-\url{https://sjtu-sai.github.io/SAI-Community/}
-
-Initiator and Core Contributor of the first student-initiated high-quality information aggregation forum of the School of Artificial Intelligence (SAI), Shanghai Jiao Tong University.
-
-
-
+Initiator and core contributor of \textbf{SAI Community}, the first student-led high-quality information aggregation forum at SJTU-SAI, fostering knowledge sharing within the academic community. Concurrently, I maintain a \textbf{technical blog} featuring 150+ articles (480k+ words) on computer science and AI, and actively contribute to open source via 30+ GitHub repositories.
 
 
 \section{Skills}
@@ -234,7 +234,7 @@ Initiator and Core Contributor of the first student-initiated high-quality infor
 
 \textbf{ML \& DL}: Familiar with Deep Learning architectures and model training techniques.
 
-\textbf{LLM \& Agents}: Familiar with core architectures for Large Language Models (LLMs) and multi-agent frameworks. 
+\textbf{LLM \& Agents}: Familiar with core architectures for Large Language Models (post training) and agentic frameworks. 
 
 \textbf{Languages}: Chinese (native), English (CET-6: 584).
 
