@@ -35,6 +35,8 @@
 \usepackage{newpxtext}
 \linespread{1.05}  
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -48,6 +50,14 @@
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+
+
+
+\definecolor{mypink}{RGB}{255,192,203} 
+\definecolor{mydarkred}{RGB}{139,0,0}  
+\newcommand{\myhighlight}[1]{%
+  \colorbox{mypink}{\textcolor{mydarkred}{\textbf{#1}}}%
+}
 
 \urlstyle{same}
 
@@ -176,7 +186,7 @@ Currently Undergraduate researcher in \textbf{MAGIC} (\textbf{M}ulti-\textbf{A}g
 
 \textbf{InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents}
 
-\textbf{ICLR 2026 Poster (3rd Author)}
+\myhighlight{ICLR 2026 Poster (3rd Author)}
 
 \url{https://arxiv.org/abs/2510.02271}
 
@@ -185,14 +195,15 @@ Pioneered \textbf{InfoMosaic-Bench}, the first benchmark dedicated to multi-sour
 
 \textbf{InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents}
 
-\textbf{ICML 2026 (In Submission, Co-first author)}
+\myhighlight{ICML 2026 (In Submission, Co-first author)}
 
 Pioneered \textbf{MCP-Persona}, the first benchmark for evaluating LLM agents on \textbf{personalized} Model Context Protocol (MCP) tools. MCP-Persona captures real-world challenges of tools interacting with individual accounts and local databases across diverse platform including Reddit, Xiaohongshu, Lark, and Slack. Extensive evaluations of state-of-the-art agents reveal substantial deficiencies in personalized tool utilization.
 \newline 
 
 \textbf{AppCopilot: Toward General, Accurate, Long‑Horizon, and Efficient Mobile Agent}
 
-\textbf{ICML 2026 (In Submission, Position-Track)}
+\myhighlight{ICML 2026 (In Submission, Position-Track)}
+
 
 \url{https://github.com/OpenBMB/AppCopilot} (\textbf{300+} stars.)
 
