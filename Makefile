@@ -30,7 +30,7 @@ clean:
 		find $(OUTDIR) tex cv -type f -name "*.$$ext" -delete; \
 	done
 	@echo "Cleaning PDFs in tex/ ..."
-	@find tex -type f -name "*.pdf" -delete
+	@find tex -type f -name "*.pdf" -not -path "tex/assets/*" -delete
 
 distclean: clean
 	@echo "Removing output PDFs..."

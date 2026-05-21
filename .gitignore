@@ -10,3 +10,5 @@ node_modules
 **.gz
 
 tex/**.pdf
+**.fls
+**.fdb_latexmk
