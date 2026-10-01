@@ -1,6 +1,7 @@
 #!/bin/bash
 
-rm -rf cv
+# 只清理英文产物以强制重编；cv/cv_zh.pdf 是本地文件（已 gitignore），不删除
+rm -f cv/cv_en.pdf cv/XiyuanYang-Resume.pdf
 
 # compile
 make silent
@@ -8,14 +9,6 @@ make silent
 # 检查英文版 PDF
 if [ ! -f "./cv/cv_en.pdf" ]; then
   echo "ERROR: Source file ./cv/cv_en.pdf not found!"
-  echo "Available files in cv/:"
-  ls -la ./cv/ || true
-  exit 1
-fi
-
-# 检查中文版 PDF
-if [ ! -f "./cv/cv_zh.pdf" ]; then
-  echo "ERROR: Source file ./cv/cv_zh.pdf not found!"
   echo "Available files in cv/:"
   ls -la ./cv/ || true
   exit 1

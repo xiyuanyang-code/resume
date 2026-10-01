@@ -55,12 +55,18 @@
 
 
 \definecolor{mypink}{RGB}{255,218,224}
-\definecolor{mydarkred}{RGB}{139,0,0}  
-\newcommand{\myhighlight}[1]{%
+\definecolor{mydarkred}{RGB}{139,0,0}
+\definecolor{mypaleblue}{RGB}{219,234,254}
+\definecolor{mydarkblue}{RGB}{30,64,175}
+\newcommand{\myhighlightred}[1]{%
   \colorbox{mypink}{\textcolor{mydarkred}{\textbf{#1}}}%
+}
+\newcommand{\myhighlightblue}[1]{%
+  \colorbox{mypaleblue}{\textcolor{mydarkblue}{\textbf{#1}}}%
 }
 
 \newcommand{\arxivicon}{\raisebox{-0.1ex}{\includegraphics[height=2ex]{./tex/assets/arxiv}}}
+\newcommand{\hficon}{\raisebox{-0.2ex}{\includegraphics[height=2ex,trim=19pt 24pt 19pt 24pt,clip]{./tex/assets/hf-logo.pdf}}}
 
 \urlstyle{same}
 
@@ -152,14 +158,16 @@ Score: \textbf{93.9}/100
 \end{multicols}
 
 
-Scholarships: 
+\textbf{Six} Scholarships: 
 
+\begin{multicols}{2}
 \begin{itemize}[nosep]
-  \item National Scholarship (2025) (2 of 62)
+  \item National Scholarship (2025, 2026) (2 of 62)
   \item Zhiyuan Honor Scholarship (2024, 2025)
   \item "Han Ying Ju Hua" Scholarship (2025, \textbf{15} per year.)
   \item SJTU Undergraduate Excellence Scholarship (2024)
 \end{itemize}
+\end{multicols}
 
 High graded courses: 
 
@@ -171,53 +179,83 @@ High graded courses:
   \item Numerical Analysis: \textbf{100}
   \item Linear Algebra (Honor): 98
   \item C++ Programming Design (Honor): 98
-  \item Fundamentals of Artificial Intelligence (ML, DL and RL): 98
+  % \item Fundamentals of Artificial Intelligence (ML, DL and RL): 98
 \end{itemize}
 \end{multicols}
 
-\textbf{22} courses achieved A/A+ (\textbf{14 A+}), including \textbf{all major-related courses}.
+\textbf{26} courses achieved A/A+ (\textbf{16 A+}), including \textbf{all major-related courses}.
 
 \cvheadingend
 \vspace{-5pt}
 
 \section{Research}
 
-My research interests lie in building \textbf{General Self-Evolving Agentic AI}, dedicated to pushing the boundaries of intelligence for autonomous agents.
-Currently undergraduate researcher in \textbf{MAGIC} (\textbf{M}ulti-\textbf{A}gent \textbf{G}overnance \& \textbf{I}ntelligence \textbf{C}rew), supervised by Prof \textbf{\href{https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=zh-CN}{Siheng Chen}}.
+\textbf{Current Research Directions:}
+
+\textbf{(i) Scalable Agentic Data Synthesis \& Training.} Generating high-quality instances and agent trajectories for mid- and post-training, with an emphasis on long-horizon tasks.
+
+\textbf{(ii) Recursive Self-Improvement (RSI).} Developing training- and inference-time methods for efficient, iterative model improvement and automated post-training.
 \newline
 
-\textbf{InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents}
+\textbf{Research Experience:}
 
-\myhighlight{ICLR 2026 Poster (3rd Author)}
+\textbf{(i) MAGIC LAB} (2024.12 - present): Undergraduate researcher advised by Prof. \textbf{\href{https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=zh-CN}{Siheng Chen}}.\\
+\hspace*{1.5em} Search-Agent, Agentic Benchmark, Auto-PostTraining (RSI).
 
-\arxivicon~\href{https://arxiv.org/abs/2510.02271}{arXiv: 2510.02271}
-\hspace{2em}\faGithub~\href{https://github.com/DorothyDUUU/Info-Mosaic}{Info-Mosaic}
+\textbf{(ii) IQuest Research} (2026.7 - present): Research intern (IQuest-Coder LLMs, Post-Training).\\
+\hspace*{1.5em} Long-Horizon Agentic Instance Synthesis \& Mid/Post-Training Trajectory Data Recipe.
 
-Pioneered \textbf{InfoMosaic-Bench}, the first benchmark dedicated to multi-source information seeking in LLM agents, demonstrating the critical need to integrate general-purpose web search with thousands of domain-specific tools via \textbf{MCP} (Model Context Protocol). Experiments revealed that web information alone is insufficient (GPT-5 Acc: 38.2\%) for information seeking due to incorrect tool usage/selection.
-\newline 
+\section{Publications \& Tech Projects}
 
-\textbf{MCP-Persona: Benchmarking LLM Agents on Personalized MCP Tools and Tasks}
+\myhighlightblue{Tech-Report} \textbf{IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems}
 
-\myhighlight{ICML 2026 Poster (Co-first author)}
+\faGithub~\href{https://github.com/IQuestLab/IQuest-Q1}{IQuestLab/IQuest-Q1}
+\hspace{2em}\hficon~\href{https://huggingface.co/IQuestLab/IQuest-Q1}{IQuest-Q1 Model Page}
+\hspace{2em}\faGlobe~\href{https://iquestlab.github.io/}{Project Page}
 
-\arxivicon~\href{https://arxiv.org/abd/2606.02470}{arXiv: 2606.02470}
-\hspace{2em}\faGithub~\href{https://github.com/wwh0411/MCP-Persona}{MCP-Persona}
+Contributed to \textbf{IQuest-Q1}, a 320B-parameter Mixture-of-Experts model with 15B active parameters per token, designed for agentic coding, reasoning, and multi-step tool use in CLI environments. The model is trained on synthetic medium- and long-horizon tasks using multi-harness reinforcement learning and multi-teacher on-policy distillation (MOPD).
+\newline
+
+\textbf{RSI-Master: Structuring Experiments to Guide Autonomous Model Improvement}
+
+\myhighlightred{Incoming submission for ICLR 2027 (Co-first author)}
+
+\arxivicon~\href{https://arxiv.org/abs/2609.35561}{arXiv: 2609.35561}
+\hspace{2em}\faGithub~\href{https://github.com/DorothyDUUU/RSI-Master}{DorothyDUUU/RSI-Master}
+
+Pioneered \textbf{RSI-Master}, which combines an Experiment OS with Reviewer-Guided Research Orchestration to prevent reward hacking and strategy lock-in in autonomous model development. On PostTrainBench with Qwen3-4B-Base, it achieved 54.49 versus 46.53 for the strongest agent baseline with a 0.0\% hacking rate; at 35B, it surpassed the human-developed Instruct model on LiveCodeBench-v6 (41.21 vs. 37.36) and SciCode.
+\newline
+
+\textbf{DataMaster: Data-Centric Autonomous AI Research}
+
+\myhighlightred{Incoming submission for ICLR 2027 (Co-first author)}
+
+\arxivicon~\href{https://arxiv.org/abs/2605.10906}{arXiv: 2605.10906}
+\hspace{2em}\faGithub~\href{https://github.com/sjtu-sai-agents/DataMaster}{sjtu-sai-agents/DataMaster}
+
+Proposed and developed DataMaster automating external data discovery, selection, and cleaning to enhance ML and post training tasks. Designed a system combining tree-structured search, shared data pool to navigate open-ended search spaces and carry global memory across branches. Successfully boosted the MLE-Bench Lite medal rate by 32.27\% and surpassed the instruct model on PostTrainBench (GPQA: 31.02\% vs. 30.35\%).
+\newline
+
+\myhighlightred{ICML-2026} \textbf{MCP-Persona: Benchmarking LLM Agents on Personalized MCP Tools and Tasks}
+
+\textbf{Co-first author}
+\hspace{2em}\arxivicon~\href{https://arxiv.org/abs/2606.02470}{arXiv: 2606.02470}
+\hspace{2em}\faGithub~\href{https://github.com/wwh0411/MCP-Persona}{wwh0411/MCP-Persona}
 
 Pioneered \textbf{MCP-Persona}, the first benchmark for evaluating LLM agents on \textbf{personalized} Model Context Protocol (MCP) tools. MCP-Persona captures real-world challenges of tools interacting with individual accounts and local databases across diverse platform including Reddit, Xiaohongshu, Lark, and Slack. Extensive evaluations of state-of-the-art agents reveal substantial deficiencies in personalized tool utilization.
 \newline 
 
-\textbf{DataMaster: Data-Centric Autonomous AI Research}
+\myhighlightred{ICLR-2026} \textbf{InfoMosaic-Bench: Evaluating Multi-Source Information Seeking in Tool-Augmented Agents}
 
-\myhighlight{Incoming submission for NIPS 2026 (Co-first author)}
+\textbf{3rd Author}
+\hspace{2em}\arxivicon~\href{https://arxiv.org/abs/2510.02271}{arXiv: 2510.02271}
+\hspace{2em}\faGithub~\href{https://github.com/DorothyDUUU/Info-Mosaic}{DorothyDUUU/Info-Mosaic}
 
-\arxivicon~\href{https://arxiv.org/abs/2605.10906}{arXiv: 2605.10906}
-\hspace{2em}\faGithub~\href{https://github.com/sjtu-sai-agents/DataMaster}{DataMaster}
+Pioneered \textbf{InfoMosaic-Bench}, the first benchmark dedicated to multi-source information seeking in LLM agents, demonstrating the critical need to integrate general-purpose web search with thousands of domain-specific tools via \textbf{MCP} (Model Context Protocol). Experiments revealed that web information alone is insufficient (GPT-5 Acc: 38.2\%) for information seeking due to incorrect tool usage/selection.
+\newline 
 
-Proposed and developed DataMaster automating external data discovery, selection, and cleaning to enhance ML and post training tasks. Designed a system combining tree-structured search, shared data pool to navigate open-ended search spaces and carry global memory across branches. Successfully boosted the MLE-Bench Lite medal rate by 32.27\% and surpassed the instruct model on PostTrainBench (GPQA: 31.02\% vs. 30.35\%).
 
-\newpage
-
-\textbf{AppCopilot: Toward General, Accurate, Long‑Horizon, and Efficient Mobile Agent}
+\myhighlightblue{Tech-Report} \textbf{AppCopilot: Toward General, Accurate, Long‑Horizon, and Efficient Mobile Agent}
 
 \faGithub~\href{https://github.com/OpenBMB/AppCopilot}{OpenBMB/AppCopilot} (\textbf{300+} stars.)
 
@@ -225,43 +263,11 @@ Developed \textbf{AppCopilot}, a multi-modal, multi-agent on-device assistant th
 
 
 
-\section{Technical Projects}
+\section{Technical Writing \& Skills}
 
-% ============== Project1 AlphaBuild ============== %
-\textbf{AlphaBuild: Generating Formulaic Alphas on a Wider Range of Stock Data with Reinforcement Learning}
+\textbf{Technical Writing.} I maintain a \textbf{\href{https://xiyuanyang-code.github.io}{technical blog}} (\href{https://xiyuanyang-code.github.io}{https://xiyuanyang-code.github.io}) with 150+ articles and 480k+ words on computer science and AI. I also maintain \textbf{\href{https://xiyuanyang-code.github.io/llm/}{Frontier LLM Notes}} (\href{https://xiyuanyang-code.github.io/llm/}{https://xiyuanyang-code.github.io/llm/}), covering model architectures, training recipes, LLM infrastructure and source-code analysis, and agentic systems.
 
-Leading AlphaBuild as the final project of course \textbf{AI1803}, an RL-based methodology using PPO to optimize factor mining process based on \href{https://github.com/RL-MLDM/alphagen}{AlphaGen}, achieving superior backtest performance by leveraging smaller, parallel factor pools and PCA for final factor selection.
-\newline
-
-\textbf{IntelliSearch: Unifying Search, Empowering Action for Tool Calling Autonomous Agents}
-
-\faGithub~\href{https://github.com/SJTU-SAI-GeekCenter/IntelliSearch}{SJTU-SAI-GeekCenter/IntelliSearch}
-
-Core contributor of \textbf{IntelliSearch}, an MCP-rooted search agent evolved into a decoupled, lightweight infrastructure for the Agentic ecosystem. By unifying context memory, dynamic tool scheduling, and multi-agent communication, it provides developers with a perfectly balanced and adaptable framework.
-\newline
-
-
-\textbf{Open Source \& Community Contributions} \\
-\url{https://xiyuanyang-code.github.io} \\ \url{https://sjtu-sai.github.io/SAI-Community/}
-
-Initiator and core contributor of \textbf{SAI Community}, the first student-led high-quality information aggregation forum at SJTU-SAI, fostering knowledge sharing within the academic community. Concurrently, I maintain a \textbf{technical blog} featuring 150+ articles (480k+ words) on computer science and AI, and actively contribute to open source via 30+ GitHub repositories.
-
-
-\section{Skills}
-\textbf{Programming Languages}: Python (Proficient), C++ (Proficient), Rust, JavaScript, HTML, CSS.
-
-\textbf{Tools}: Git, \LaTeX, Shell, Docker.
-
-\textbf{Python Modules}: Torch (Proficient), Numpy, Pandas, Matplotlib, BeautifulSoup, FastMCP, etc.
-
-\textbf{ML \& DL}: Familiar with Deep Learning architectures and model training techniques.
-
-\textbf{LLM \& Agents}: Familiar with core architectures for Large Language Models (post training) and agentic frameworks. 
-
-\textbf{Languages}: Chinese (native), English (CET-6: 584).
-
-
-
+\textbf{Skills.} LLM (Model Architectures, Training, Agentic Harness), Programming Languages (Python, C++), Training Infra (slime, megatron, harbor). English CET-6: 584.
 
 \section{Awards and Certifications}
 
